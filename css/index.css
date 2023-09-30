@@ -1,0 +1,100 @@
+.content {
+    background: pink;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner {
+    height: 710px;
+    position: relative;
+}
+
+.banner-title {
+    position: absolute;
+    top: 148px;
+    left: 36px;
+    width: 100%;
+}
+
+.banner .text {
+    display: flex;
+    flex-direction: column;
+    width: 623px;
+    border-radius: 18px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.banner-title .title {
+    font-size: 50px;
+    font-weight: 700px;
+
+}
+
+.banner-title .subtitle {
+    font-size: 40px;
+}
+
+.banner-title .title,
+.banner-title .subtitle {
+    background: linear-gradient(142deg, #23fd53 10.39%, #38dbff 97.29%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* banner 底部新闻 */
+
+.news,
+.column {
+    width: 100%;
+}
+
+.banner .news {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+.banner .news-title {
+    display: inline-block;
+    padding: 10px 0 20px 20px;
+}
+
+.banner .news-title h2 {
+    padding: 0 15px 4px 0;
+    border-bottom: 3px solid #ffb26a;
+}
+
+.banner .column {
+    padding: 10px;
+}
+
+.news-content ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.news-content li {
+    padding: 10px 20px 43px 10px;
+    flex-grow: 1;
+}
+
+
+.news .side-left,
+.news .side-right {
+    width: 36px;
+    background: rgba(255, 149, 52, 0.85);
+}
+
+.banner .news-content .news-times {
+    font-size: 14px;
+    padding-bottom: 16px;
+    color: #ccc;
+}
+
+.banner .news-content .news-content {
+    font-size: 18px;
+}

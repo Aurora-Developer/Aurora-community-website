@@ -1,6 +1,43 @@
+/* 毛玻璃背景 */
+.glass {
+    background: rgba(22, 22, 22, 0.38);
+    backdrop-filter: blur(15px);
+}
+
+
+/* 顶部导航部分 */
+header {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.nav {
+    /* background: #66ffcc; */
+    scroll-padding-right: 48px;
+}
+
+.nav ul li {
+    display: inline-flex;
+    padding: 10px 10px 5px;
+    margin-right: 115px;
+    border-bottom: 3px solid #ffb26a;
+}
+
+.nav ul li a {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700px;
+    color: #fff;
+
+}
+
+/* 底部页脚部分 */
 .link-box {
     width: 100%;
-    padding-top: 20px ;
+    padding-top: 20px;
     /* background-color: pink; */
     background: url(../img/footer-bg.png), lightgray 50% / cover no-repeat;
     color: #fff;
@@ -59,10 +96,10 @@
     padding: 5px;
 }
 
-.link-box .other-link .left{
+.link-box .other-link .left {
     flex-grow: 4;
 }
 
-.link-box .other-link .right{
+.link-box .other-link .right {
     flex-grow: 1;
 }
