@@ -1,9 +1,10 @@
-.content {
-    background: pink;
+main {
+    background: #f5f6ff;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
+/* banner */
 .banner {
     height: 710px;
     position: relative;
@@ -97,4 +98,69 @@
 
 .banner .news-content .news-content {
     font-size: 18px;
+}
+
+
+/* list */
+.list {
+    width: 80vw;
+}
+
+.list .block {
+    display: flex;
+    margin-top: 47px;
+}
+
+.list .block .right {
+    display: flex;
+    flex-wrap: wrap;
+    /* position: relative; */
+    flex-grow: 1;
+}
+
+.list .block .left {
+    flex-grow: 1;
+    width: 281px;
+}
+
+.list .block .right div,
+.list .block .left {
+    flex-shrink: 0;
+    background: #a6a6a6;
+    margin: 9.5px;
+}
+
+
+
+.list .block .right div:nth-child(1) {
+    width: 580px;
+    height: 200px;
+    flex-grow: 2;
+}
+
+.list .block .right div:nth-child(2) {
+    width: 280px;
+    height: 200px;
+    flex-grow: 1;
+}
+
+.list .block .right div:nth-child(3) {
+    width: 280px;
+    height: 200px;
+    flex-grow: 1;
+}
+
+.list .block .right div:nth-child(4) {
+    width: 580px;
+    height: 200px;
+    flex-grow: 2;
+}
+
+/* introduce */
+.introduce {
+    margin-top: 88px;
+}
+
+.introduce .content {
+    margin: 0 auto;
 }
