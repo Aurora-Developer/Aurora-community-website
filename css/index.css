@@ -1,13 +1,13 @@
 main {
     background: #f5f6ff;
     width: 100%;
-    /* overflow: hidden; */
 }
 
 /* banner */
 .banner {
     height: 710px;
     position: relative;
+    background-size: cover;
 }
 
 .banner-title {
@@ -26,18 +26,17 @@ main {
     gap: 10px;
 }
 
-.banner-title .title {
+.banner-title .title h1{
     font-size: 50px;
-    font-weight: 700px;
-
 }
 
 .banner-title .subtitle {
     font-size: 40px;
 }
 
-.banner-title .title,
+.banner-title .title h1,
 .banner-title .subtitle {
+    font-weight: 800;
     background: linear-gradient(142deg, #23fd53 10.39%, #38dbff 97.29%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -100,6 +99,26 @@ main {
     font-size: 18px;
 }
 
+/* banner -end */
+
+.introduce .title,
+.introduce .text .introduce-title,
+.introduce .text li p:nth-child(1),
+.developer .title,
+.download .window h1,
+.download .window .title,
+.download .window button,
+.log button,
+.log h1 {
+    font-size: 18px;
+    color: rgb(255, 138, 20);
+}
+
+.introduce .title,
+.developer .title {
+    margin: 10px 0;
+}
+
 
 /* list */
 .list {
@@ -156,11 +175,125 @@ main {
     flex-grow: 2;
 }
 
+/* list -end */
+
 /* introduce */
 .introduce {
     margin-top: 88px;
+    padding: 80px 0;
 }
 
-.introduce .content {
+.introduce,
+.developer {
+    text-align: center;
+}
+
+.introduce .img {
+    width: 880px;
+    height: 386px;
+    background: #d9d9d9;
     margin: 0 auto;
+    margin: 30px auto;
+}
+
+.introduce .text {
+    text-align: left;
+}
+
+.introduce .text .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.introduce .text ul {
+    margin: 10px;
+}
+
+.introduce .text li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 15px;
+}
+
+.introduce .text li .icon {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 4px 10px 15px 0 rgba(255, 178, 106, .2);
+}
+
+
+.introduce h1,
+.developer h1 {
+    display: inline-block;
+    background: #fff;
+    border-radius: 14px;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+/* introduce -end */
+
+/* developer */
+.developer {
+    margin: 44px 0 20px;
+}
+
+.developer .account .avatar {
+    width: 150px;
+    height: 150px;
+    background: #d9d9d9;
+    margin: 20px auto 30px;
+    border-radius: 25px;
+    box-shadow: 4px 10px 15px 0 rgba(255, 178, 106, .2);
+}
+
+/* download */
+.download {
+    overflow: hidden;
+    /* background: url(https://random.skiro.link/api/?id=14); */
+    background-size: cover;
+
+}
+
+.download .window {
+    margin: 78px auto 50px;
+    width: 625px;
+    height: 318px;
+    border-radius: 14px;
+    background: rgba(22, 22, 22, .3);
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.download .window h1 {
+    width: 100%;
+    height: 45px;
+    border-radius: 14px 14px 0 0;
+    background: rgba(255, 149, 52, 0.6);
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+}
+
+.log {
+    padding: 25px 0 54px;
+}
+
+.log .content {
+    display: flex;
+}
+
+.log .left {
+    margin:0 120px 0 20vw;
+}
+
+.log .right {
+
+    width: 280px;
+    height: 167px;
+    background: #d9d9d9;
 }

@@ -93,28 +93,40 @@
 
             <!-- introduce -->
             <section class="introduce orange">
-                <div class="content">
+                <div class="content w">
                     <h1>introduce</h1>
                     <div class="title">here is title</div>
                     <div class="content">here is content here is content here is content here is content here is content
                     </div>
                     <div class="img"></div>
-                    <div class="introduce-title"></div>
-                    <div class="content">here is content here is content here is content here is content here is content
+                    <div class="text">
+                        <div class="introduce-title">here is title here is title</div>
+                        <p>here is content here is content here is content here is content here is content
+                        </p>
+                        <ul>
+                            <li>
+                                <div class="icon"></div>
+                                <div class="text">
+                                    <p>here is content here is content
+                                    </p>
+                                    <p>here is content here is content
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <div class="text">
+                                    <p>here is content here is content
+                                    </p>
+                                    <p>here is content here is content
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="content">here is content here is content here is content here is content here is
+                            content
+                        </div>
                     </div>
-                </div>
-                <ul>
-                    <li>
-                        <div class="list-title">here is content here is content</div>
-                        <div class="list-content">here is content here is content</div>
-                    </li>
-                    <li>
-                        <div class="list-title">here is content here is content</div>
-                        <div class="list-content">here is content here is content</div>
-                    </li>
-                </ul>
-                <div class="content">here is content here is content here is content here is content here is content
-                </div>
             </section>
 
             <!-- developer -->
@@ -147,14 +159,17 @@
 
             <!-- update-log -->
             <section class="log orange">
-                <div class="left">
-                    <div class="subtitle">here is subtitle</div>
-                    <h1>here is title</h1>
-                    <div class="content">here is content here is content here is content here is content here is content
+                <div class="content">
+                    <div class="left">
+                        <div class="subtitle">here is subtitle</div>
+                        <h1>here is title</h1>
+                        <div class="content">here is content here is content here is content here is content here is
+                            content
+                        </div>
+                        <button>HERE IS CONTENT</button>
                     </div>
-                    <button>HERE IS CONTENT</button>
+                    <div class="right"></div>
                 </div>
-                <div class="right"></div>
             </section>
         </div>
 
@@ -217,6 +232,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
+        }
+        
+        document.querySelector(".banner").style.background= `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+
+        document.querySelector(".download").style.background= `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+
+
+
+    </script>
 </body>
 
 </html>
