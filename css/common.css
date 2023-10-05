@@ -19,29 +19,16 @@ header#nav {
     position: fixed;
     height: 50px;
     width: 100%;
-    overflow: hidden;
     z-index: 2;
     transition: all .3s;
 
 
 }
 
-header .bg {
-    display: flex;
-    flex-direction: row-reverse;
-    position: fixed;
-    height: 50px;
-    width: 100%;
-
-    z-index: -1;
-}
-
 .nav {
     /* background: #66ffcc; */
     padding-left: 48px;
-
 }
-
 
 .nav ul li {
     display: inline-flex;
@@ -202,8 +189,23 @@ footer {
         display: none;
     }
 
+    .modal {
+        padding: 1.6rem 1rem;
+    }
+
+    .modal .options {
+        flex-direction: column;
+    }
+
+    .modal .options .btn{
+        margin:10px;
+        width: 80vw;
+    }
+
     header .menu {
         /* display: inline-block; */
+        position: relative;
+        float: right;
         width: 50px;
         height: 50px;
         background: rgba(255, 178, 106, .2);
@@ -211,17 +213,19 @@ footer {
     }
 
     .menu-block {
-        position: absolute;
+        position: fixed;
+        /* float: right; */
         top: 0;
         right: -400px;
         height: 60vh;
         width: 230px;
         background: #fff;
         transition: all .5s;
+        z-index: 5;
         /* border-radius: 50%; */
     }
 
-    #nav:hover .menu-block {
+    #nav .menu:hover .menu-block {
         top: 0;
         right: 0;
 
