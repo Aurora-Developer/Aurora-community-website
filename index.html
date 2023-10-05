@@ -16,7 +16,11 @@
 
 <body>
     <header id="nav">
-        <div class="bg glass"></div>
+        <div class="bg glass">
+            <div class="menu">
+                <div class="menu-block"></div>
+            </div>
+        </div>
         <div class="nav w">
             <ul>
                 <li><a href="#">home</a></li>
@@ -27,6 +31,8 @@
             </ul>
         </div>
     </header>
+
+
 
     <!-- 页面主体部分 start -->
 
@@ -151,7 +157,7 @@
                 </div> -->
 
                 <!-- Swiper -->
-                <div class="swiper devSwiper" id="devSwiper" >
+                <div class="swiper devSwiper" id="devSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">Slide 1</div>
                         <div class="swiper-slide">Slide 2</div>
@@ -177,7 +183,7 @@
 
             <!-- update-log -->
             <section class="log orange">
-                <div class="content">
+                <div class="content w">
                     <div class="left">
                         <div class="subtitle">here is subtitle</div>
                         <h1>here is title</h1>
@@ -254,7 +260,7 @@
 
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script>
-        
+
 
         // 临时使用：随机图片
         function getRandomIntInclusive(min, max) {
@@ -263,11 +269,11 @@
             return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
         }
 
-        // document.querySelector(".banner").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+        document.querySelector(".banner").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
 
-        // document.querySelector(".download").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+        document.querySelector(".download").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
 
-        
+
 
         window.addEventListener("scroll", () => {
             header = document.querySelector("header .bg")
@@ -279,7 +285,7 @@
                 // for (let i = 0; i < headerText.length; i++) {
                 //     headerText[i].style.color = "#fff"
                 // }
-            }else {
+            } else {
                 header.style.top = "-50px"
                 // for (let i = 0; i < headerText.length; i++) {
                 //     headerText[i].style.color = "rgb(255, 138, 20)"

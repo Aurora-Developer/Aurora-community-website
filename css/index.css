@@ -340,17 +340,19 @@ main {
 
 .log .content {
     display: flex;
+    overflow:hidden;
 }
 
 .log .left {
-    margin: 0 120px 0 20vw;
+    margin: 0 120px 0 6vw;
 }
 
 .log .left h1{
     margin: 14px 0;
-}
+}   
 
 .log .left button {
+    display: block;
     width: 400px;
     /* height: 22px; */
     color: #fff;
@@ -373,7 +375,7 @@ main {
     background: #d9d9d9;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
     .w {
         width: 100%
     }
@@ -442,7 +444,31 @@ main {
 
     
     .log .right{
-        margin: 14px auto 0;
+        margin: 14px 14px 0;
     }
 
+}
+
+@media screen and (min-width: 641px) and (max-width: 1200px){
+    .w{
+        width:unset;
+    }
+
+    .introduce .img{
+        width: unset;
+        margin: 30px 10px;
+    }
+
+    .introduce .text{
+        margin: 0 10px;
+    }
+
+    .log .left {
+    margin: 0 0 0 6vw;
+    width: 54vw;
+    }
+    
+    .log .left button{
+        width: 330px
+    }
 }

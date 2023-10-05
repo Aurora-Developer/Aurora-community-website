@@ -26,6 +26,8 @@ header#nav {
 }
 
 header .bg {
+    display: flex;
+    flex-direction: row-reverse;
     position: fixed;
     height: 50px;
     width: 100%;
@@ -36,7 +38,8 @@ header .bg {
 
 .nav {
     /* background: #66ffcc; */
-    scroll-padding-right: 48px;
+    padding-left: 48px;
+
 }
 
 
@@ -127,4 +130,73 @@ footer {
 
 .link-box .other-link .right {
     flex-grow: 1;
+}
+
+@media screen and (max-width: 640px){
+    .nav {
+        padding-left: 20px;
+    }
+
+    .nav ul li{
+        margin-right: 35px;
+    }
+
+    .nav ul li:nth-child(n+3){
+        display: none;
+    }
+
+    header .menu{
+        /* display: inline-block; */
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 178, 106, .2);
+        z-index: 4;
+    }
+
+    .menu-block{
+        position: absolute;
+        top: 0;
+        right: -400px;
+        height: 60vh;
+        width: 230px;
+        background: #fff;
+        transition: all .5s;
+        /* border-radius: 50%; */
+    }
+    
+    #nav:hover .menu-block{
+        top: 0;
+        right: 0;
+        
+    }
+    
+
+
+    .link-box .main-link{
+        margin-left: 10px;
+        flex-direction: column;
+        gap: 42px;
+    }  
+
+    .link-box .main-link li{
+        margin: 0 0 18px;
+    }
+
+    .link-box .main-link:first-child {
+        padding-left: unset;
+    }
+    .link-box .other-link{
+        padding: 15px 25px;
+        flex-direction: column-reverse;
+    }
+    
+}
+@media screen and (min-width: 641px) and (max-width: 1200px){
+    .nav ul li{
+        margin-right: 40px;
+    }
+
+    .link-box .main-link:first-child {
+        padding-left: 40px;
+    }
 }
