@@ -43,7 +43,7 @@
                         <div class="title">
                             <h1>here is title</h1>
                         </div>
-                        <div class="subtitle">here is subtitle here is subtitle here is subtitle here is subtitle</div>
+                        <p class="subtitle">here is subtitle here is subtitle here is subtitle here is subtitle</p>
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                 </div> -->
 
                 <!-- Swiper -->
-                <div class="swiper mySwiper">
+                <div class="swiper devSwiper" id="devSwiper" >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">Slide 1</div>
                         <div class="swiper-slide">Slide 2</div>
@@ -252,19 +252,20 @@
     </footer>
 
 
-    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
     <script>
+        
 
-
+        // 临时使用：随机图片
         function getRandomIntInclusive(min, max) {
             min = Math.ceil(min);
             max = Math.floor(max);
             return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
         }
 
-        document.querySelector(".banner").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+        // document.querySelector(".banner").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
 
-        document.querySelector(".download").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+        // document.querySelector(".download").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
 
         
 
@@ -274,7 +275,7 @@
             if (document.documentElement.scrollTop >= 100) {
                 header.style.top = "0"
 
-                // 若背景为浅色系导致白色字体无法看清，请将启用以下功能
+                // 若背景为浅色系导致白色字体无法看清，请启用以下功能
                 // for (let i = 0; i < headerText.length; i++) {
                 //     headerText[i].style.color = "#fff"
                 // }
@@ -285,9 +286,9 @@
                 // }
             }
         })
-        
+
         // Initialize Swiper
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".devSwiper", {
             spaceBetween: 30,
             centeredSlides: true,
             autoplay: {
