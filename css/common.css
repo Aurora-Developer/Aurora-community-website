@@ -59,7 +59,7 @@ header#nav {
     border: 3px solid black;
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.6);
-    box-shadow: 8px 8px 0 rgba(253, 251, 251, 0.2);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 3;
     transition: all 2s;
 }

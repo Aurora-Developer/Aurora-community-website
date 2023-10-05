@@ -25,6 +25,7 @@ main {
     border-radius: 18px;
     padding: 10px;
     gap: 10px;
+    transition: all .3s;
 }
 
 .banner-title .title h1 {
@@ -386,6 +387,7 @@ main {
 
     .banner .banner-title .text{
         width: unset;
+        margin: 0 16px;
     }
 
     .banner-title .title h1 {
