@@ -9,24 +9,36 @@
     background: rgba(255, 242, 234, .92);
 }
 
-.shadow{
+.shadow {
     border-radius: 14px;
     box-shadow: 4px 10px 15px 0 rgba(255, 178, 106, .2);
 }
 
 /* 顶部导航部分 */
-header {
+header#nav {
     position: fixed;
     height: 50px;
     width: 100%;
     overflow: hidden;
     z-index: 2;
+
+
+}
+
+header .bg {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top:-50px;
+    transition: all .3s;
+    z-index: -1;
 }
 
 .nav {
     /* background: #66ffcc; */
     scroll-padding-right: 48px;
 }
+
 
 .nav ul li {
     display: inline-flex;
@@ -47,6 +59,7 @@ header {
 footer {
     overflow: hidden;
 }
+
 .link-box {
     width: 100%;
     padding-top: 20px;

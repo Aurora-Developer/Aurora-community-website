@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
 
 </head>
 
 <body>
-    <header class="glass">
+    <header id="nav">
+        <div class="bg glass"></div>
         <div class="nav w">
             <ul>
                 <li><a href="#">home</a></li>
@@ -251,7 +252,7 @@
     </footer>
 
 
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script>
 
 
@@ -265,7 +266,26 @@
 
         document.querySelector(".download").style.background = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
 
+        
 
+        window.addEventListener("scroll", () => {
+            header = document.querySelector("header .bg")
+            headerText = document.querySelectorAll("header .nav ul li a ")
+            if (document.documentElement.scrollTop >= 100) {
+                header.style.top = "0"
+
+                // 若背景为浅色系导致白色字体无法看清，请将启用以下功能
+                // for (let i = 0; i < headerText.length; i++) {
+                //     headerText[i].style.color = "#fff"
+                // }
+            }else {
+                header.style.top = "-50px"
+                // for (let i = 0; i < headerText.length; i++) {
+                //     headerText[i].style.color = "rgb(255, 138, 20)"
+                // }
+            }
+        })
+        
         // Initialize Swiper
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,

@@ -1,0 +1,24 @@
+{
+  "name": "aurora-community-homepage",
+  "version": "1.0.0",
+  "description": "`git clone https://github.com/Aurora-Developer/Aurora-community-website.git`",
+  "main": "index.js",
+  "dependencies": {
+    "swiper": "^10.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aurora-Developer/Aurora-community-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aurora-Developer/Aurora-community-website/issues"
+  },
+  "homepage": "https://github.com/Aurora-Developer/Aurora-community-website#readme"
+}
