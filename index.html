@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,53 +9,334 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
+
 </head>
+
 <body>
+    <header class="glass" id="nav">
+        <div class="menu">
+            <div class="menu-block"></div>
+        </div>
+        <div class="nav w">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- 页面主体部分 start -->
+
+    <main>
+
+
+        <!-- banner -->
+
+        <section class="banner">
+            <!-- banner 标题文字 -->
+            <div class="banner-title ">
+                <div class="summary w">
+                    <div class="text glass">
+                        <div class="title">
+                            <h1>here is title</h1>
+                        </div>
+                        <p class="subtitle">here is subtitle here is subtitle here is subtitle here is subtitle</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- banner 底部新闻 -->
+            <div class="news glass">
+                <div class="side-left glass"></div>
+                <div class="column">
+                    <div class="news-title">
+                        <h2>news</h2>
+                    </div>
+                    <div class="news-content">
+                        <ul>
+                            <li><a href="#">
+                                    <div class="news-times">time:2023.09:30</div>
+                                    <div class="news-content">here is content here is content here is content</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="news-times">time:2023.09:30</div>
+                                    <div class="news-content">here is content here is content here is content</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="news-times">time:2023.09:30</div>
+                                    <div class="news-content">here is content here is content here is content</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="news-times">time:2023.09:30</div>
+                                    <div class="news-content">here is content here is content here is content</div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="side-right glass"></div>
+            </div>
+
+        </section>
+
+        <div class="content">
+            <!-- list -->
+            <section class="list w">
+                <div class="block">
+                    <div class="left shadow"></div>
+                    <div class="right">
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- introduce -->
+            <section class="introduce orange">
+                <div class="content w">
+                    <h1>introduce</h1>
+                    <div class="title">here is title</div>
+                    <div class="content">here is content here is content here is content here is content here is content
+                    </div>
+                    <div class="img"></div>
+                    <div class="text">
+                        <div class="introduce-title">here is title here is title</div>
+                        <p>here is content here is content here is content here is content here is content
+                        </p>
+                        <ul>
+                            <li>
+                                <div class="icon"></div>
+                                <div class="text">
+                                    <p>here is content here is content
+                                    </p>
+                                    <p>here is content here is content
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <div class="text">
+                                    <p>here is content here is content
+                                    </p>
+                                    <p>here is content here is content
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="content">here is content here is content here is content here is content here is
+                            content
+                        </div>
+                    </div>
+            </section>
+
+            <!-- developer -->
+            <section class="developer">
+                <h1>developer</h1>
+                <div class="title">here is title</div>
+                <div class="content">here is content here is content here is content here is content here is content
+                </div>
+                <!-- <div class="account">
+                    <div class="avatar"></div>
+                    <div class="name"></div>
+                    <div class="profile"></div>
+                    <ul>
+                        <li>name</li>
+                        <li>name</li>
+                        <li>name</li>
+                    </ul>
+                </div> -->
+
+                <!-- Swiper -->
+                <div class="swiper devSwiper" id="devSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-- download -->
+            <section class="download">
+                <div class="window">
+                    <h1>download</h1>
+                    <div class="title">download</div>
+                    <div class="content">here is content here is content here is content here is content here is content
+                    </div>
+                    <button>download</button>
+            </section>
+
+            <!-- update-log -->
+            <section class="log orange">
+                <div class="content w">
+                    <div class="left">
+                        <div class="subtitle">here is subtitle</div>
+                        <h1>here is title</h1>
+                        <div class="content">here is content here is content here is content here is content here is
+                            content
+                        </div>
+                        <button>HERE IS CONTENT</button>
+                    </div>
+                    <div class="right"></div>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+
+    <!-- 页面主体部分 end -->
+
+
+    <div class="modal glass" id="cookies-btn">
+        <p class="message">This Website Uses Cookies</p>
+        <p class="message">Cookies are small data files to improve you experience, such as saving you preferences </p>
+        <div class="options">
+            <button class="btn" id="allow">Allow</button>
+            <button class="btn" id="list">Cookies list</button>
+        </div>
+    </div>
+
+
+
     <footer>
         <div class="link-box">
             <div class="main-link">
-                <div class="link-item first"><ul>
-                    <li class="title">Aurora community</li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                </ul></div>
-                <div class="link-item"><ul>
-                    <li class="title">title</li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                </ul></div>
-                <div class="link-item"><ul>
-                    <li class="title">title</li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                </ul></div>
-                <div class="link-item"><ul>
-                    <li class="title">title</li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                </ul></div>
+                <div class="link-item first">
+                    <ul>
+                        <li class="title">Aurora community</li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="link-item">
+                    <ul>
+                        <li class="title">title</li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="link-item">
+                    <ul>
+                        <li class="title">title</li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="link-item">
+                    <ul>
+                        <li class="title">title</li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="other-link">
                 <div class="left">
                     <div>Language: English</div>
-                <div>
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Cookie policy</a>
-                    <a href="#">User agreement</a>
-                    <a href="#">DMCA</a>
+                    <div>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Cookie policy</a>
+                        <a href="#">User agreement</a>
+                        <a href="#">DMCA</a>
+                    </div>
+                    <div>copyright: aurora community developer.</div>
                 </div>
-                <div>copyright: aurora community developer.</div>
-                </div>
-                <div class="right">sms icon</div>
+                <div class="right">sns icon</div>
             </div>
         </div>
     </footer>
+
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+
+        // 临时使用：随机图片
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
+        }
+
+        // document.querySelector(".banner").style.backgroundImage = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+
+        // document.querySelector(".download").style.backgroundImage = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+
+
+
+        window.addEventListener("scroll", () => {
+            header = document.querySelector("header")
+            headerText = document.querySelectorAll("header .nav ul li a ")
+            if (document.documentElement.scrollTop >= 1600) {
+                header.style.top = "-50px"
+            } else {
+                header.style.top = "0"
+            }
+        })
+
+        const cookies = document.querySelector("#cookies-btn")
+        const cookiesTime = setTimeout(() => {
+            cookies.style.bottom = "4%"
+            setTimeout(() => {
+                cookies.style.bottom = "0"
+            }, 2000);
+        }, 3000);
+
+
+        cookies.addEventListener("click", (e) => {
+            if (e.target.id === "allow") {
+                cookies.style.bottom = "-50%"
+                const userCookies = 1
+                localStorage.setItem("userCookies", userCookies)
+            } else {
+                window.location.href = "#"
+            }
+        })
+
+        if (localStorage.userCookies == true) {
+            clearTimeout(cookiesTime)
+        }
+
+        // Initialize Swiper
+        var swiper = new Swiper(".devSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
 </body>
+
 </html>
