@@ -9,6 +9,7 @@ main {
     height: 710px;
     position: relative;
     background-size: cover;
+    background-image: url(./img/banner.jpg);
 }
 
 .banner-title {
