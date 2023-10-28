@@ -391,7 +391,7 @@ main {
     }
 
     .banner-title .title h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
     .banner-title .subtitle {
         font-size: 30px;
@@ -412,6 +412,11 @@ main {
 
     .list .block .right div, .list .block .left{
         flex-shrink: unset;
+        
+    }
+    .introduce .content .content {
+        margin: 0px 4px;
+        
     }
     .introduce .img {
         width:unset;
@@ -424,6 +429,10 @@ main {
 
     .developer #devSwiper .swiper-pagination-bullet{
         padding: unset;
+    }
+    
+    .developer .content{
+      margin: 0 4px;
     }
 
     .download .window{
