@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aurora community homepage</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="glass" id="nav">
+        <div class="menu">
+            <div class="menu-block"></div>
+        </div>
+        <div class="nav w">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+<iframe width="100%" height="860px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=yN1s-vD0Mk2eWJ_SKmh48YoNggj8QUZHuDAtOrVKoMZUMDk1SFpCWE1ZUUtFWlVLVktNMllERFlYNS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+
+
+    <div class="modal glass" id="cookies-btn">
+        <p class="message">This Website Uses Cookies</p>
+        <p class="message">Cookies are small data files to improve you experience, such as saving you preferences </p>
+        <div class="options">
+            <button class="btn" id="allow">Allow</button>
+            <button class="btn" id="list">Cookies list</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="link-box">
+            <div class="main-link">
+                <div class="link-item first">
+                    <ul>
+                        <li class="title">Aurora community</li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="link-item">
+                    <ul>
+                        <li class="title">title</li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="link-item">
+                    <ul>
+                        <li class="title">title</li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="link-item">
+                    <ul>
+                        <li class="title">title</li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="other-link">
+                <div class="left">
+                    <div>Language: English</div>
+                    <div>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Cookie policy</a>
+                        <a href="#">User agreement</a>
+                        <a href="#">DMCA</a>
+                    </div>
+                    <div>copyright: aurora community developer.</div>
+                </div>
+                <div class="right">sns icon</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+
+        // 临时使用：随机图片
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
+        }
+
+        // document.querySelector(".banner").style.backgroundImage = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+
+        // document.querySelector(".download").style.backgroundImage = `url(https://random.skiro.link/api/?id=${getRandomIntInclusive(1, 692)})`
+
+
+
+        window.addEventListener("scroll", () => {
+            header = document.querySelector("header")
+            headerText = document.querySelectorAll("header .nav ul li a ")
+            if (document.documentElement.scrollTop >= 1600) {
+                header.style.top = "-50px"
+            } else {
+                header.style.top = "0"
+            }
+        })
+
+        const cookies = document.querySelector("#cookies-btn")
+        const cookiesTime = setTimeout(() => {
+            cookies.style.bottom = "4%"
+            setTimeout(() => {
+                cookies.style.bottom = "0"
+            }, 2000);
+        }, 3000);
+
+
+        cookies.addEventListener("click", (e) => {
+            if (e.target.id === "allow") {
+                cookies.style.bottom = "-50%"
+                const userCookies = 1
+                localStorage.setItem("userCookies", userCookies)
+            } else {
+                window.location.href = "#"
+            }
+        })
+
+        if (localStorage.userCookies == true) {
+            clearTimeout(cookiesTime)
+        }
+
+        // Initialize Swiper
+        var swiper = new Swiper(".devSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    </script>
+</body>
+
+</html>
