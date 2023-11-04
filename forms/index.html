@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aurora community homepage</title>
+    <title>深空问卷 -深空我的世界社区</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/index.css">
@@ -24,44 +24,47 @@
                 </span>
                 <ul>
                     <li>
-                        <a href='bbs.aurora-sky.top'>论坛</a>
+                        <a href='https://bbs.aurora-sky.top'>论坛</a>
                     </li>
                     <li>
-                        <a href='www.aurora-sky.top/news'>新闻</a>
+                        <a href='https://www.aurora-sky.top/news'>新闻</a>
                     </li>
                     <li>
-                        <a href='www.aurora-sky.top/dev'>开发</a>
+                        <a href='https://www.aurora-sky.top/dev'>开发</a>
                     </li>
                     <li>
-                        <a href='www.aurora-sky.top/download'>下载App</a>
+                        <a href='https://www.aurora-sky.top/download'>下载App</a>
                     </li>
                 </ul>
             </label>
         </div>
         <div class="nav w">
             <ul>
-                <li><a href="#">主页</a></li>
-                <li><a href="#">论坛</a></li>
-                <li><a href="#">新闻</a></li>
-                <li><a href="#">开发</a></li>
-                <li><a href="#">下载App</a></li>
+                <li><a href="https://www.aurora-sky.top">主页</a></li>
+                <li><a href="https://bbs.aurora-sky.top">论坛</a></li>
+                <li><a href="https://www.aurora-sky.top/news">新闻</a></li>
+                <li><a href="https://www.aurora-sky.top/dev">开发</a></li>
+                <li><a href="https://www.aurora-sky.top/download">下载App</a></li>
             </ul>
         </div>
     </header>
 
 
-<iframe width="100%" height="860px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=yN1s-vD0Mk2eWJ_SKmh48YoNggj8QUZHuDAtOrVKoMZUMDk1SFpCWE1ZUUtFWlVLVktNMllERFlYNS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    <iframe width="100%" height="860px"
+        src="https://forms.office.com/Pages/ResponsePage.aspx?id=yN1s-vD0Mk2eWJ_SKmh48YoNggj8QUZHuDAtOrVKoMZUMDk1SFpCWE1ZUUtFWlVLVktNMllERFlYNS4u&embed=true"
+        frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
+        allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
 
 
-<div class="modal glass" id="cookies-btn">
-    <p class="message">该网站可能会使用Cookies</p>
-    <p class="message">深空及旗下网站可能会使用 cookies 来改善用户体验，例如保储存您的偏好</p>
-    <div class="options">
-        <button class="btn" id="allow">Allow</button>
-        <button class="btn" id="list">Cookies list</button>
+    <div class="modal glass" id="cookies-btn">
+        <p class="message">该网站可能会使用Cookies</p>
+        <p class="message">深空及旗下网站可能会使用 cookies 来改善用户体验，例如保储存您的偏好</p>
+        <div class="options">
+            <button class="btn" id="allow">Allow</button>
+            <button class="btn" id="list">Cookies list</button>
+        </div>
     </div>
-</div>
 
 
 
@@ -83,7 +86,8 @@
                         <li><a href="http://home.aurora-sky.top/">深空空间站</a></li>
                         <li><a href="http://blog.aurora-sky.top/">深空博客</a></li>
                         <li><a href="http://www.aurora-sky.top/download">深空App</a></li>
-                    </ul>                   <li><a href="http://spacewar.aurora-sky.top/">浴火深空</a></li>
+                    </ul>
+                    <li><a href="http://spacewar.aurora-sky.top/">浴火深空</a></li>
                     </ul>
                 </div>
                 <div class="link-item">
@@ -139,13 +143,13 @@
 
 
         let prevScroll = pageYOffset;
-        window.onscroll = function() {
+        window.onscroll = function () {
             console.log(1)
             header = document.querySelector("header")
             let lastScroll = pageYOffset;
             if (prevScroll > lastScroll) {
                 header.style.top = "0px"
-                
+
             } else {
                 header.style.top = "-50px"
             }
