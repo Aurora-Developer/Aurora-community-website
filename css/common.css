@@ -84,10 +84,10 @@ header#nav {
 
 .menu label input:checked+.menu {
     box-shadow: 0 0 0 100vw rgba(0, 0, 0), 0 0 0 100vh rgba(255, 149, 52, 0.3);
-    background: rgba(251, 148, 51, 0.44);
+    background: rgba(251, 148, 51, 0.7);
+    backdrop-filter: blur(15px);
     height: 140vh;
     width: 140vw;
-    backdrop-filter: blur(20px);
     border-radius: 0;
 }
 
