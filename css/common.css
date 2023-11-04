@@ -19,15 +19,123 @@ header#nav {
     position: fixed;
     height: 50px;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
     transition: all .3s;
 
 
 }
 
-.nav {
+.menu {
     /* background: #66ffcc; */
     padding-left: 48px;
+    z-index: 2;
+}
+
+
+.menu label .menu {
+    position: absolute;
+    right: -90px;
+    top: -100px;
+    z-index: 100;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 149, 52, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 50% 50% 50% 50%;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 rgba(255, 149, 52, 0.3), 0 0 0 0 rgba(255, 149, 52, 0.3);
+    cursor: pointer;
+}
+
+.menu label .hamburger {
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    width: 30px;
+    height: 2px;
+    background: rgb(230, 230, 230);
+    display: block;
+    transform-origin: center;
+    transition: 0.5s ease-in-out;
+}
+
+.menu label .hamburger:after,
+.menu label .hamburger:before {
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(230, 230, 230);
+}
+
+.menu label .hamburger:before {
+    top: -10px;
+}
+
+.menu label .hamburger:after {
+    bottom: -10px;
+}
+
+.menu label input {
+    display: none;
+}
+
+.menu label input:checked+.menu {
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0), 0 0 0 100vh rgba(255, 149, 52, 0.3);
+    background: rgba(251, 148, 51, 0.44);
+    height: 140vh;
+    width: 140vw;
+    backdrop-filter: blur(20px);
+    border-radius: 0;
+}
+
+.menu label input:checked+.menu .hamburger {
+    transform: rotate(45deg);
+    left: 134vw;
+}
+
+.menu label input:checked+.menu .hamburger:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.menu label input:checked+.menu .hamburger:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.menu label input:checked+.menu+ul {
+    opacity: 1;
+}
+
+.menu label ul {
+    font-size: 20px;
+    font-weight: bolder;
+    z-index: 200;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.25s .2s ease-in-out;
+}
+
+.menu label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
 }
 
 .nav ul li {
@@ -189,6 +297,15 @@ footer {
         display: none;
     }
 
+    .menu label ul {
+        left: 48vw;
+    }
+
+    .menu label input:checked+.menu .hamburger {
+        left: 117vw;
+    }
+
+
     .modal {
         padding: 1.6rem 1rem;
     }
@@ -197,13 +314,12 @@ footer {
         flex-direction: column;
     }
 
-    .modal .options .btn{
-        margin:10px;
+    .modal .options .btn {
+        margin: 10px;
         width: 80vw;
     }
 
-    header .menu {
-        /* display: inline-block; */
+    /* header .menu {
         position: relative;
         float: right;
         width: 50px;
@@ -214,7 +330,6 @@ footer {
 
     .menu-block {
         position: fixed;
-        /* float: right; */
         top: 0;
         right: -400px;
         height: 60vh;
@@ -222,8 +337,8 @@ footer {
         background: #fff;
         transition: all .5s;
         z-index: 5;
-        /* border-radius: 50%; */
-    }
+        /* border-radius: 50%;
+    } */
 
     #nav .menu:hover .menu-block {
         top: 0;
@@ -257,6 +372,10 @@ footer {
 @media screen and (min-width: 641px) and (max-width: 1200px) {
     .nav ul li {
         margin-right: 40px;
+    }
+
+    .menu label input:checked+.menu .hamburger {
+        left: 129vw;
     }
 
     .link-box .main-link:first-child {

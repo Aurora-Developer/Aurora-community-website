@@ -17,7 +17,24 @@
 <body>
     <header class="glass" id="nav">
         <div class="menu">
-            <div class="menu-block"></div>
+            <!-- <div class="menu-block"></div> -->
+            <label>
+                <input type='checkbox'>
+                <span class='menu'>
+                    <span class='hamburger'></span>
+                </span>
+                <ul>
+                    <li>
+                        <a href='#'>Home</a>
+                    </li>
+                    <li>
+                        <a href='#'>About</a>
+                    </li>
+                    <li>
+                        <a href='#'>Work</a>
+                    </li>
+                </ul>
+            </label>
         </div>
         <div class="nav w">
             <ul>
@@ -27,6 +44,7 @@
                 <li><a href="#">home</a></li>
                 <li><a href="#">home</a></li>
             </ul>
+
         </div>
     </header>
 
@@ -285,15 +303,28 @@
 
 
 
-        window.addEventListener("scroll", () => {
+        // window.addEventListener("scroll", () => {
+        //     header = document.querySelector("header")
+        //     if (document.documentElement.scrollTop >= 1600) {
+        //         header.style.top = "-50px"
+        //     } else {
+        //         header.style.top = "0"
+        //     }
+        // })
+        let prevScroll = pageYOffset;
+        window.onscroll = function() {
+            console.log(1)
             header = document.querySelector("header")
-            headerText = document.querySelectorAll("header .nav ul li a ")
-            if (document.documentElement.scrollTop >= 1600) {
-                header.style.top = "-50px"
+            let lastScroll = pageYOffset;
+            if (prevScroll > lastScroll) {
+                header.style.top = "0px"
+                
             } else {
-                header.style.top = "0"
+                header.style.top = "-50px"
             }
-        })
+            prevScroll = lastScroll
+        }
+
 
         const cookies = document.querySelector("#cookies-btn")
         const cookiesTime = setTimeout(() => {

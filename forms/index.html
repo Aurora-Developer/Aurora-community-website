@@ -17,7 +17,26 @@
 <body>
     <header class="glass" id="nav">
         <div class="menu">
-            <div class="menu-block"></div>
+            <label>
+                <input type='checkbox'>
+                <span class='menu'>
+                    <span class='hamburger'></span>
+                </span>
+                <ul>
+                    <li>
+                        <a href='bbs.aurora-sky.top'>论坛</a>
+                    </li>
+                    <li>
+                        <a href='www.aurora-sky.top/news'>新闻</a>
+                    </li>
+                    <li>
+                        <a href='www.aurora-sky.top/dev'>开发</a>
+                    </li>
+                    <li>
+                        <a href='www.aurora-sky.top/download'>下载App</a>
+                    </li>
+                </ul>
+            </label>
         </div>
         <div class="nav w">
             <ul>
@@ -119,15 +138,19 @@
 
 
 
-        window.addEventListener("scroll", () => {
+        let prevScroll = pageYOffset;
+        window.onscroll = function() {
+            console.log(1)
             header = document.querySelector("header")
-            headerText = document.querySelectorAll("header .nav ul li a ")
-            if (document.documentElement.scrollTop >= 1600) {
-                header.style.top = "-50px"
+            let lastScroll = pageYOffset;
+            if (prevScroll > lastScroll) {
+                header.style.top = "0px"
+                
             } else {
-                header.style.top = "0"
+                header.style.top = "-50px"
             }
-        })
+            prevScroll = lastScroll
+        }
 
         const cookies = document.querySelector("#cookies-btn")
         const cookiesTime = setTimeout(() => {

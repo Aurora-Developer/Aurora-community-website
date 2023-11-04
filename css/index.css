@@ -10,6 +10,7 @@ main {
     position: relative;
     background-size: cover;
     background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
 }
 
 .banner-title {
@@ -260,6 +261,7 @@ main {
     width: 100%;
     height: 280px;
     margin-top: 20px;
+    z-index: 0;
 }
 
 .developer .swiper-slide {
@@ -342,16 +344,16 @@ main {
 
 .log .content {
     display: flex;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .log .left {
     margin: 0 120px 0 6vw;
 }
 
-.log .left h1{
+.log .left h1 {
     margin: 14px 0;
-}   
+}
 
 .log .left button {
     display: block;
@@ -382,11 +384,11 @@ main {
         width: 100%
     }
 
-    .banner .banner-title{
+    .banner .banner-title {
         left: 0;
     }
 
-    .banner .banner-title .text{
+    .banner .banner-title .text {
         width: unset;
         margin: 0 16px;
     }
@@ -394,93 +396,97 @@ main {
     .banner-title .title h1 {
         font-size: 36px;
     }
+
     .banner-title .subtitle {
         font-size: 30px;
     }
 
     .news .side-left,
     .news .side-right {
-        width:0;
+        width: 0;
     }
 
-    .banner .news .news-content ul li:nth-child(n+2){
-        display:none;       
+    .banner .news .news-content ul li:nth-child(n+2) {
+        display: none;
     }
 
-    .list .block{
+    .list .block {
         display: unset
     }
 
-    .list .block .right div, .list .block .left{
+    .list .block .right div,
+    .list .block .left {
         flex-shrink: unset;
-        
-    }
-    .introduce .content .content {
-        margin: 0px 4px;
-        
-    }
-    .introduce .img {
-        width:unset;
-        margin: 30px 10px;      
+
     }
 
-    .introduce .text{
+    .introduce .content .content {
+        margin: 0px 4px;
+
+    }
+
+    .introduce .img {
+        width: unset;
+        margin: 30px 10px;
+    }
+
+    .introduce .text {
         margin: 10px;
     }
 
-    .developer #devSwiper .swiper-pagination-bullet{
+    .developer #devSwiper .swiper-pagination-bullet {
         padding: unset;
     }
-    
-    .developer .content{
-      margin: 0 4px;
+
+    .developer .content {
+        margin: 0 4px;
     }
 
-    .download .window{
-         width: unset;
-         margin: 78px 4px 50px;
+    .download .window {
+        width: unset;
+        margin: 78px 4px 50px;
     }
 
-    .log .content{
+    .log .content {
         display: unset;
     }
 
-    .log .left{
-        margin:10px 0 0 16px;
+    .log .left {
+        margin: 10px 0 0 16px;
     }
 
     .log .left button {
         width: unset;
-        padding:4px 40px;
+        padding: 4px 40px;
     }
 
-    
-    .log .right{
+
+    .log .right {
         margin: 14px 14px 0;
     }
 
 }
 
-@media screen and (min-width: 641px) and (max-width: 1200px){
-    .w{
-        width:unset;
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+    .w {
+        width: unset;
     }
 
-    .introduce .img{
+    .introduce .img {
         width: unset;
         margin: 30px 10px;
     }
 
-    .introduce .text{
+    .introduce .text {
         margin: 0 10px;
     }
 
     .log .left {
-    margin: 0 0 0 6vw;
-    width: 54vw;
+        margin: 0 0 0 6vw;
+        width: 54vw;
     }
-    
-    .log .left button{
+
+    .log .left button {
         width: 330px
     }
 }
